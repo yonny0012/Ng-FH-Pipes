@@ -32,6 +32,10 @@
         <li>fecha | date:'short'</li>
         <li>fecha | date:'long'</li>
         <li>fecha | date:'d MMMM y'</li>
+        <hr />
+        <ul>
+          <li>fecha | date:'short'</li>
+        </ul>
       </ul>
     </p-card>
   </div>
@@ -40,9 +44,13 @@
       <ul>
         <li>{{ fecha }}</li>
         <li>{{ fecha | date }}</li>
-        <li>{{ fecha | date:'short'}}</li>
-        <li>{{ fecha | date:'long'}}</li>
-        <li>{{ fecha | date:'d MMMM y'}}</li>
+        <li>{{ fecha | date : "short" }}</li>
+        <li>{{ fecha | date : "long" }}</li>
+        <li>{{ fecha | date : "d MMMM y" }}</li>
+        <hr />
+        <ul>
+          <li>{{ fecha | date : "long":'GMT-4':'' }}</li>
+        </ul>
       </ul>
     </p-card>
   </div>
