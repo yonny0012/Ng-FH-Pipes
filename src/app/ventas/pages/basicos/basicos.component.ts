@@ -9,4 +9,7 @@ export class BasicosComponent {
   nombreLower: string = 'yonny';
   nombreUper: string = 'dominguez';
   nombreCompleto: string = this.nombreLower + ' ' + this.nombreUper;
+
+  fecha: Date=new Date();
+  
 }
