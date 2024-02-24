@@ -63,6 +63,6 @@ export class NoComunesComponent {
   valorPromesa = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve('Tenemos data de la promesa.');
-    }, 3500);
+    }, 5000);
   });
 }
